@@ -9,8 +9,8 @@ async function getWeather() {
     const data = await response.json();
     console.log(data);
 
-    temp.textContent = `The temperature in London was ${data.hourly.temperature_2m[12]}${data.hourly_units.temperature_2m}`;
-    time.textContent = `On the 27th of March 2023 at ${data.hourly.time[12].substr(-5)} midday`;
+    temp.textContent = `The temperature in London was ${data.hourly.temperature_2m[12]}${data.hourly_units.temperature_2m}.`;
+    time.textContent = `On the 27th of March 2023 at ${data.hourly.time[12].substr(-5)}.`;
 }
 
 getWeather();
