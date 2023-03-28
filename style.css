@@ -1,0 +1,13 @@
+/* Lobster font */
+
+html{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
