@@ -8,7 +8,7 @@
 
 :root {
   --background: #ffffcb;
-  --text-colour: #2c858d;
+  --text-colour: #004056;
 }
 
 html {
@@ -18,10 +18,39 @@ html {
   color: var(--text-colour);
 }
 
-.container {
+header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3em;
+}
+
+.header-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 6em;
+}
+
+.weather-icon-large {
+  height: 5em;
+  width: auto;
+}
+
+/* Create a 2x2 grid */
+.header-right {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.info-group {
   display: flex;
   justify-content: center;
+  flex-flow: column wrap;
   align-items: center;
-  flex-direction: column;
-  color: var(--text-colour);
+  height: 4em;
+  font-size: 4em;
+  border: 1px solid #000;
 }
